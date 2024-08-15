@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="./estilos/estilos.css">
+</head>
+<body>
+    <header class="header">
+        <div>
+            <img src="./img/Logo.png" alt="Logo de Alura" class="logo">
+        </div>
+        <h1>Encriptador de Texto</h1>
+    </header>
+
+   <main class="principal">
+        <section class="texto">
+            <textarea placeholder="Ingrese el texto aqui" id="valorUsuario"></textarea>
+            <h5 class="instrucciones">Solo letras minusculas y sin acentos</h5>
+            <div class="botones">
+                <button class="encriptar" onclick="encriptarTexto();">Encriptar</button>
+                <button class="desencriptar" onclick="desencriptarTexto();">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="mostrarTexto">
+            <img src="./img/Muñeco.png" alt="Mensaje no encontrado" id="muneco">
+            <textarea placeholder="Ningun mensaje fue encontrado. &#10  &#10Ingresa el texto que deseas encriptar o desencriptar" id="textoRespuesta" disabled></textarea>
+            <div class="copiar">
+                <button onclick="copiarTexto();" class="botonCopiar">Copiar</button>
+            </div>
+        </section>
+   </main>
+
+   <footer>
+        <p>&copy; 2024 Victor Javier Reyes Silva</p>
+   </footer>
+   
+   <script src="js/app.js" defer></script>
+</body>
+</html>
